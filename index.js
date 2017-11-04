@@ -23,5 +23,5 @@ function exactMatch(array, object) {
 function exactMatchToList(array, object) {
   return exactMatch(array, object).map(function(element) {
     return element.name;
-  })
+  });
 }
