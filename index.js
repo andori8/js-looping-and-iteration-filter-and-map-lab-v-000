@@ -19,3 +19,9 @@ function exactMatch(array, object) {
     return element[objectKey] === objectValue;
   });
 }
+
+function exactMatchToList(array, object) {
+  return exactMatch(array, object).map(function(element) {
+    return element.name;
+  })
+}
